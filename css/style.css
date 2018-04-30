@@ -2,18 +2,18 @@
 Colors used
 
 Primary colors:
-White 		#FFFFFF;
-Grey 		#919191;
+White 		  #FFFFFF;
+Grey 		    #919191;
 Light Blue 	#124AA8;
 Dark Blue 	#001F52;
-Black 		#000000;
+Black 		  #000000;
 
 Complementary colors:
-White #FFFFFF;
-Light grey #DBDBDA;
-Orange #FDA404;
-Brown #7D5100;
-Black #000000;
+White       #FFFFFF;
+Light grey  #DBDBDA;
+Orange      #FDA404;
+Brown       #7D5100;
+Black       #000000;
 
 Font families
 'Open Sans', sans-serif
@@ -32,7 +32,7 @@ body {
   /* Adds a 10px outer spacing to all sides*/
 }
 
-/*Styling headers*/
+/*Styling of the headers*/
 
 h1 {
   font-family: 'Roboto Slab', serif;
@@ -53,11 +53,6 @@ h3 {
 
 a {
   /*Base color of the link*/
-  color: #124AA8;
-}
-
-a:visited {
-  /* visited link */
   color: #FDA404;
 }
 
@@ -68,21 +63,21 @@ a:hover, a:focus {
 
 a:active {
   /* selected link */
-  color: #001F52;
+  color: #7D5100;
 }
 
 /*Styling button */
 
 button {
   /* overwrite browser defaults */
-  border: none;
   /* reset the border */
+  border: none;
+  /* inherit the font from the outer container */
   font-family: inherit;
   font-weight: bold;
-  /* takes the font from the outer container */
+  font-size: medium;
   /* style button */
   background-color: #FDA404;
-  color: black !important;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -96,4 +91,13 @@ button:hover, button:focus {
   /* let's the mouse appear as hand when hovering over the button */
   opacity: 0.8;
   /* Reduces the opactiy of the button to 80% */
+  color: #FFFFFF !important;
+}
+
+/*Colors of the links in the menu-navigationbar */
+.menu {
+  color:#124AA8;
+}
+.menu:hover, .menu:active {
+  color:#001F52;
 }
