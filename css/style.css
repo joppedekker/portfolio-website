@@ -1,0 +1,99 @@
+/*
+Colors used
+
+Primary colors:
+White 		#FFFFFF;
+Grey 		#919191;
+Light Blue 	#124AA8;
+Dark Blue 	#001F52;
+Black 		#000000;
+
+Complementary colors:
+White #FFFFFF;
+Light grey #DBDBDA;
+Orange #FDA404;
+Brown #7D5100;
+Black #000000;
+
+Font families
+'Open Sans', sans-serif
+'Roboto Slab', serif
+ */
+
+body {
+  /*font family and size */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20 px;
+  /* Line height */
+  line-height: 1.6;
+  padding: 10px;
+  /* Adds a 10px inner spacing to all sides*/
+  margin: 10px;
+  /* Adds a 10px outer spacing to all sides*/
+}
+
+/*Styling headers*/
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;
+}
+
+h3 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+}
+
+/*Start styling of the links*/
+
+a {
+  /*Base color of the link*/
+  color: #124AA8;
+}
+
+a:visited {
+  /* visited link */
+  color: #FDA404;
+}
+
+a:hover, a:focus {
+  /*No underline when hovering over link or selecting it with keyboard*/
+  text-decoration: none;
+}
+
+a:active {
+  /* selected link */
+  color: #001F52;
+}
+
+/*Styling button */
+
+button {
+  /* overwrite browser defaults */
+  border: none;
+  /* reset the border */
+  font-family: inherit;
+  font-weight: bold;
+  /* takes the font from the outer container */
+  /* style button */
+  background-color: #FDA404;
+  color: black !important;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #7D5100;
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+button:hover, button:focus {
+  cursor: pointer;
+  /* let's the mouse appear as hand when hovering over the button */
+  opacity: 0.8;
+  /* Reduces the opactiy of the button to 80% */
+}
