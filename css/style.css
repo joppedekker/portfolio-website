@@ -65,6 +65,16 @@ a:active {
   color: #7D5100;
 }
 
+/*Styling of the navigation menu*/
+
+nav a {
+  color: #124AA8;
+}
+
+nav a:hover, nav a:active {
+  color: #001F52;
+}
+
 /*Styling button */
 
 button {
@@ -91,12 +101,4 @@ button:hover, button:focus {
   opacity: 0.8;
   /* Reduces the opactiy of the button to 80% */
   color: #FFFFFF !important;
-}
-
-/*Colors of the links in the menu-navigationbar */
-.menu {
-  color:#124AA8;
-}
-.menu:hover, .menu:active {
-  color:#001F52;
 }
