@@ -7,7 +7,7 @@
 
   <!--Link to css stylesheet-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:400,700" rel="stylesheet">
 
   <!--Favicons-->
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -20,142 +20,179 @@
 </head>
 
 <body>
+  <div class="wrapper">
+    <header class="wrapper">
+      <!-- Logo of the site -->
+      <img src="img/logo.png" alt="logo">
 
-  <header>
-    <!-- Logo of the site -->
-    <img src="img/logo.png" alt="logo">
+      <!-- Main Menu -->
+      <nav>
+        <ul>
+          <li><a href="#work">My work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- Main Menu -->
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#work">My work</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero section-->
-  <section>
-    <div>
-      <h1>Hi, My name is <b>Joppe Dekker</b>. <span><i>Welcome to my Portfolio Site!</i></span></h1>
-    </div>
-  </section>
-
-  <!-- Work examples -->
-  <section id="work">
-    <h1>My work</h1>
-
-    <!-- Project1 -->
-    <div>
-
-      <!--Left column-->
+    <!-- Hero section-->
+    <section>
       <div>
-        <img src="img/process.png" alt="my process">
+        <h1>Hi, My name is <b>Joppe Dekker</b>. <span><i>Welcome to my Portfolio Site!</i></span></h1>
+      </div>
+    </section>
+
+    <!-- Task 1.7 - Test for showing 4 columns -->
+    <section>
+      <h1>Test met 4 kolommen</h1>
+
+      <div>
+        <img class="column-4" src="img/process.png" alt="my process">
+        <img class="column-4" src="img/flashcard-app.png" alt="Language learning app">
+        <img class="column-4" src="img/hidden-gems.png" alt="Hidden Gems">
+        <img class="column-4" src="img/cvg-fonds.png" alt="Stichting Constant van Gestel fonds">
       </div>
 
-      <!--Right column-->
-      <div>
+      <div class="column-4">
         <h2>My process</h2>
         <p>As an UX Designer, I use a broad variations of skills and tools when designing. Here I'll tell you more about the design process and skills I use.</p>
         <a href="process.html">Read more</a>
       </div>
-    </div>
 
-    <!-- Project2 -->
-    <div>
-      <!--this will be row-->
-
-      <!--Left column-->
-      <div>
-        <img src="img/flashcard-app.png" alt="Language learning app">
+      <div class="column-4">
+        <h2>My process</h2>
+        <p>As an UX Designer, I use a broad variations of skills and tools when designing. Here I'll tell you more about the design process and skills I use.</p>
+        <a href="process.html">Read more</a>
       </div>
 
-      <!--Right column-->
-      <div>
-        <h2>Language Learning app</h2>
-        <p>People are learning new vocabulary every day. But learning a new language from scratch is hard and if you have a busy life, it’s hard to find time to learn. During the UX Fundamentals course of Careerfoundry, I designed a lesson based vocabulary
-          learning app. </p>
-
-        <h3>Used skills</h3>
-        <p>User & Competitor research, personas, userflows, low-fidelity wireframing, paper-prototyping, usability testing</p>
-        <a href="project1.html">Read more</a>
-      </div>
-    </div>
-
-    <!-- Project3 -->
-    <div>
-
-      <!--Left column-->
-      <div>
-        <img src="img/hidden-gems.png" alt="Hidden Gems">
+      <div class="column-4">
+        <h2>My process</h2>
+        <p>As an UX Designer, I use a broad variations of skills and tools when designing. Here I'll tell you more about the design process and skills I use.</p>
+        <a href="process.html">Read more</a>
       </div>
 
-      <div>
-        <h2>Hidden Gems</h2>
-        <p>Hidden Gems is a mobile scavenger hunt app. The app is designed for people who want to go off the beaten path and (re)discover the city they are in together with friends and family. The functionalities will give the users a way to immerse themselves
-          in their city by playing and creating scavenger hunts. </p>
-
-        <h3>Used skills</h3>
-        <p>user-centered design, competitive analysis, generative and evaluative research, business requirements, user personas, user journeys, mobile first, responsive design, information architecture, user flowss, iterative wireframing and prototyping, usability and preference testing, design documentation and presentation</p>
-        <a href="project2.html">Read more</a>
-      </div>
-    </div>
-
-    <!-- Project4 -->
-    <div>
-      <!--left column-->
-      <div>
-        <img src="img/cvg-fonds.png" alt="Stichting Constant van Gestel fonds">
+      <div class="column-4">
+        <h2>My process</h2>
+        <p>As an UX Designer, I use a broad variations of skills and tools when designing. Here I'll tell you more about the design process and skills I use.</p>
+        <a href="process.html">Read more</a>
       </div>
 
-      <!--Right column-->
+    </section>
+    <!--Einde test 4 kolommen -->
+
+    <!-- Work examples -->
+    <section id="work">
+      <h1>My work</h1>
+
+      <!-- Project1 -->
       <div>
-        <h2>Stichting Constant van Gestel Fonds</h2>
-        <p>Stichting Constant van Gestel Fonds is a foundation that supports young talented musicians. As a member on the committee of this foundation, I was responsible for a redesign of the website.</p>
+        <!-- Left column -->
+        <div>
+          <img src="img/process.png" alt="my process">
+        </div>
 
-        <h3>Used skills</h3>
-        <p>Insert list of used skills</p>
-        <br><a href="#">Read more</a>
+        <!--Right column-->
+        <div>
+          <h2>My process</h2>
+          <p>As an UX Designer, I use a broad variations of skills and tools when designing. Here I'll tell you more about the design process and skills I use.</p>
+          <a href="process.html">Read more</a>
+        </div>
       </div>
-    </div>
-    <!--End work examples -->
 
-  </section>
+      <!-- Project2 -->
+      <div>
+        <!--this will be row-->
 
-  <!-- About me -->
-  <section id="about">
-    <h1>About</h1>
+        <!--Left column-->
+        <div>
+          <img src="img/flashcard-app.png" alt="Language learning app">
+        </div>
 
-    <div>I’m a UX Designer with a software development background.
+        <!--Right column-->
+        <div>
+          <h2>Language Learning app</h2>
+          <p>People are learning new vocabulary every day. But learning a new language from scratch is hard and if you have a busy life, it’s hard to find time to learn. During the UX Fundamentals course of Careerfoundry, I designed a lesson based vocabulary
+            learning app. </p>
 
-      <p>Over the past 16 years I’ve seen all different aspects of the development process: gathering user and business requirements, designing, developing, testing, implementing and managing complex applications.</p>
-      <p>I’m passionate about creating and designing user-centered products. I am currently looking for a new opportunity where I can combine my past experience with my passion for UX design.</p>
-    </div>
+          <h3>Used skills</h3>
+          <p>User & Competitor research, personas, userflows, low-fidelity wireframing, paper-prototyping, usability testing</p>
+          <a href="project1.html">Read more</a>
+        </div>
+      </div>
 
-  </section>
+      <!-- Project3 -->
+      <div>
 
-  <!--Contact Information-->
-  <section id="contact">
-    <h1>Contact</h1>
-    <div>Want to know more about what I can do for your company?
-      <a href="mailto:jopped@gmail.com"><button>Get in contact!</button></a>
+        <!--Left column-->
+        <div>
+          <img src="img/hidden-gems.png" alt="Hidden Gems">
+        </div>
 
-      <br>Joppe Dekker
-      <br>
-      <br>Telephone: <a href="tel:+31624156959">+31 6 24 15 69 59</a>
-      <br>Email: <a href="mailto:jopped@gmail.com">jopped@gmail.com</a>
-      <br>Skype: <a href="skype:jopped" jopped>jopped</a>
-    </div>
+        <div>
+          <h2>Hidden Gems</h2>
+          <p>Hidden Gems is a mobile scavenger hunt app. The app is designed for people who want to go off the beaten path and (re)discover the city they are in together with friends and family. The functionalities will give the users a way to immerse themselves
+            in their city by playing and creating scavenger hunts. </p>
 
-    <!--Start social media links-->
-    <div>
-      <!--Twitter-->
-      <a href="http://www.twitter.com/jopped">
-        <?xml version="1.0" encoding="utf-8"?>
-        <!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+          <h3>Used skills</h3>
+          <p>user-centered design, competitive analysis, generative and evaluative research, business requirements, user personas, user journeys, mobile first, responsive design, information architecture, user flowss, iterative wireframing and prototyping,
+            usability and preference testing, design documentation and presentation</p>
+          <a href="scavengerhunt.html">Read more</a>
+        </div>
+      </div>
+
+      <!-- Project4 -->
+      <div>
+        <!--left column-->
+        <div>
+          <img src="img/cvg-fonds.png" alt="Stichting Constant van Gestel fonds">
+        </div>
+
+        <!--Right column-->
+        <div>
+          <h2>Stichting Constant van Gestel Fonds</h2>
+          <p>Stichting Constant van Gestel Fonds is a foundation that supports young talented musicians. As a member on the committee of this foundation, I was responsible for a redesign of the website.</p>
+
+          <h3>Used skills</h3>
+          <p>Insert list of used skills</p>
+          <br><a href="#">Read more</a>
+        </div>
+      </div>
+      <!--End work examples -->
+
+    </section>
+
+    <!-- About me -->
+    <section id="about">
+      <h1>About</h1>
+
+      <div>I’m a UX Designer with a software development background.
+
+        <p>Over the past 16 years I’ve seen all different aspects of the development process: gathering user and business requirements, designing, developing, testing, implementing and managing complex applications.</p>
+        <p>I’m passionate about creating and designing user-centered products. I am currently looking for a new opportunity where I can combine my past experience with my passion for UX design.</p>
+      </div>
+
+    </section>
+
+    <!--Contact Information-->
+    <section id="contact">
+      <h1>Contact</h1>
+      <div>Want to know more about what I can do for your company?
+        <a href="mailto:jopped@gmail.com"><button>Get in contact!</button></a>
+
+        <br>Joppe Dekker
+        <br>
+        <br>Telephone: <a href="tel:+31624156959">+31 6 24 15 69 59</a>
+        <br>Email: <a href="mailto:jopped@gmail.com">jopped@gmail.com</a>
+        <br>Skype: <a href="skype:jopped" jopped>jopped</a>
+      </div>
+
+      <!--Start social media links-->
+      <div>
+        <!--Twitter-->
+        <a href="http://www.twitter.com/jopped">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
       <style type="text/css">
       	.st0{fill:#1DA1F2;}
       	.st1{fill:#FFFFFF;}
@@ -173,13 +210,13 @@
       		C97.7,293.1,124.7,301.6,153.6,301.6"/>
       </g>
       </svg>
-      </a>
+        </a>
 
-      <!--LinkedIn-->
-      <a href="https://www.linkedin.com/in/joppedekker/">
-        <?xml version="1.0" encoding="iso-8859-1"?>
-        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 382 382" style="enable-background:new 0 0 382 382;" xml:space="preserve">
+        <!--LinkedIn-->
+        <a href="https://www.linkedin.com/in/joppedekker/">
+          <?xml version="1.0" encoding="iso-8859-1"?>
+          <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 382 382" style="enable-background:new 0 0 382 382;" xml:space="preserve">
     	<path
     		style="fill:#0077B7;"
     		d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889
@@ -191,12 +228,13 @@
     	c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472
     	L341.91,330.654L341.91,330.654z"/>
       </svg>
-      </a>
+        </a>
 
-    </div>
-    <!--End social media links-->
+      </div>
+      <!--End social media links-->
 
-  </section>
+    </section>
+  </div>
 </body>
 
 </html>
