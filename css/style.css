@@ -22,13 +22,9 @@ Font families
 body {
   /*font family and size */
   font-family: 'Open Sans', sans-serif;
-  font-size: 20 px;
+  font-size: 20px;
   /* Line height */
   line-height: 1.6;
-  padding: 10px;
-  /* Adds a 10px inner spacing to all sides*/
-  margin: 10px;
-  /* Adds a 10px outer spacing to all sides*/
 }
 
 /*Styling of the headers*/
@@ -84,7 +80,7 @@ button {
   /* inherit the font from the outer container */
   font-family: inherit;
   font-weight: bold;
-  font-size: medium;
+  font-size: 20px;
   /* style button */
   background-color: #FDA404;
   text-decoration: none;
@@ -100,5 +96,27 @@ button:hover, button:focus {
   /* let's the mouse appear as hand when hovering over the button */
   opacity: 0.8;
   /* Reduces the opactiy of the button to 80% */
-  color: #FFFFFF !important;
+  color: #FFFFFF;
+}
+
+/* Layout styling */
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.column-container {
+  font-size: 0;
+}
+
+.column-4 {
+  font-size: 20px;
+  width: 24%;
+  display: inline-block;
+  margin-right: 1%;
+}
+
+.column-4: last-child {
+  margin-right: 0;
 }
