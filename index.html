@@ -20,8 +20,8 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="wrapper">
+  <header>
+    <div class="wrapper">
       <!-- Logo of the site -->
       <img src="img/logo.png" alt="logo">
 
@@ -33,66 +33,72 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <!-- Hero section-->
-    <section>
-      <div>
-        <h1>Hi, My name is <b>Joppe Dekker</b>. <span><i>Welcome to my Portfolio Site!</i></span></h1>
-      </div>
-    </section>
+  <!-- Hero section-->
+  <section>
+    <div class="wrapper">
+      <h1>Hi, My name is <b>Joppe Dekker</b>. <span><i>Welcome to my Portfolio Site!</i></span></h1>
+    </div>
+  </section>
 
-    <!-- Task 1.7 - Test for showing 4 columns -->
-    <section>
-      <h1>Test met 4 kolommen</h1>
+  <!-- Task 1.7 - Test for showing 4 columns
+  <section class="test">
+    <div class="wrapper">
 
-      <div>
-        <img class="column-4" src="img/process.png" alt="my process">
-        <img class="column-4" src="img/flashcard-app.png" alt="Language learning app">
-        <img class="column-4" src="img/hidden-gems.png" alt="Hidden Gems">
-        <img class="column-4" src="img/cvg-fonds.png" alt="Stichting Constant van Gestel fonds">
-      </div>
+    <h1>Test met 4 kolommen</h1>
+
+    <div class="container">
 
       <div class="column-4">
+        <img src="img/process.png" alt="my process">
         <h2>My process</h2>
         <p>As an UX Designer, I use a broad variations of skills and tools when designing. Here I'll tell you more about the design process and skills I use.</p>
         <a href="process.html">Read more</a>
       </div>
 
       <div class="column-4">
+        <img src="img/flashcard-app.png" alt="Language learning app">
         <h2>My process</h2>
         <p>As an UX Designer, I use a broad variations of skills and tools when designing. Here I'll tell you more about the design process and skills I use.</p>
         <a href="process.html">Read more</a>
       </div>
 
       <div class="column-4">
+        <img src="img/hidden-gems.png" alt="Hidden Gems">
         <h2>My process</h2>
         <p>As an UX Designer, I use a broad variations of skills and tools when designing. Here I'll tell you more about the design process and skills I use.</p>
         <a href="process.html">Read more</a>
       </div>
 
       <div class="column-4">
+        <img src="img/cvg-fonds.png" alt="Stichting Constant van Gestel fonds">
         <h2>My process</h2>
         <p>As an UX Designer, I use a broad variations of skills and tools when designing. Here I'll tell you more about the design process and skills I use.</p>
         <a href="process.html">Read more</a>
       </div>
+    </div>
 
-    </section>
-    <!--Einde test 4 kolommen -->
+  </div>
+  </section>
+  Einde test 4 kolommen -->
 
-    <!-- Work examples -->
-    <section id="work">
+  <!-- Work examples -->
+  <section id="work">
+    <div class="wrapper">
       <h1>My work</h1>
 
       <!-- Project1 -->
-      <div>
+      <div class="row">
+
         <!-- Left column -->
-        <div>
+        <div class="column column-2">
           <img src="img/process.png" alt="my process">
         </div>
 
         <!--Right column-->
-        <div>
+        <div class="column column-2">
           <h2>My process</h2>
           <p>As an UX Designer, I use a broad variations of skills and tools when designing. Here I'll tell you more about the design process and skills I use.</p>
           <a href="process.html">Read more</a>
@@ -100,16 +106,16 @@
       </div>
 
       <!-- Project2 -->
-      <div>
+      <div class="row">
         <!--this will be row-->
 
         <!--Left column-->
-        <div>
+        <div class="column column-2">
           <img src="img/flashcard-app.png" alt="Language learning app">
         </div>
 
         <!--Right column-->
-        <div>
+        <div class="column column-2">
           <h2>Language Learning app</h2>
           <p>People are learning new vocabulary every day. But learning a new language from scratch is hard and if you have a busy life, it’s hard to find time to learn. During the UX Fundamentals course of Careerfoundry, I designed a lesson based vocabulary
             learning app. </p>
@@ -121,14 +127,14 @@
       </div>
 
       <!-- Project3 -->
-      <div>
+      <div class="row">
 
         <!--Left column-->
-        <div>
+        <div class="column column-2">
           <img src="img/hidden-gems.png" alt="Hidden Gems">
         </div>
 
-        <div>
+        <div class="column column-2">
           <h2>Hidden Gems</h2>
           <p>Hidden Gems is a mobile scavenger hunt app. The app is designed for people who want to go off the beaten path and (re)discover the city they are in together with friends and family. The functionalities will give the users a way to immerse themselves
             in their city by playing and creating scavenger hunts. </p>
@@ -141,14 +147,14 @@
       </div>
 
       <!-- Project4 -->
-      <div>
+      <div class="row">
         <!--left column-->
-        <div>
+        <div class="column column-2">
           <img src="img/cvg-fonds.png" alt="Stichting Constant van Gestel fonds">
         </div>
 
         <!--Right column-->
-        <div>
+        <div class="column column-2">
           <h2>Stichting Constant van Gestel Fonds</h2>
           <p>Stichting Constant van Gestel Fonds is a foundation that supports young talented musicians. As a member on the committee of this foundation, I was responsible for a redesign of the website.</p>
 
@@ -158,11 +164,12 @@
         </div>
       </div>
       <!--End work examples -->
+    </div>
+  </section>
 
-    </section>
-
-    <!-- About me -->
-    <section id="about">
+  <!-- About me -->
+  <section id="about">
+    <div class="wrapper">
       <h1>About</h1>
 
       <div>I’m a UX Designer with a software development background.
@@ -170,11 +177,13 @@
         <p>Over the past 16 years I’ve seen all different aspects of the development process: gathering user and business requirements, designing, developing, testing, implementing and managing complex applications.</p>
         <p>I’m passionate about creating and designing user-centered products. I am currently looking for a new opportunity where I can combine my past experience with my passion for UX design.</p>
       </div>
+    </div>
+  </section>
 
-    </section>
+  <!--Contact Information-->
+  <section id="contact">
+    <div class="wrapper">
 
-    <!--Contact Information-->
-    <section id="contact">
       <h1>Contact</h1>
       <div>Want to know more about what I can do for your company?
         <a href="mailto:jopped@gmail.com"><button>Get in contact!</button></a>
@@ -232,9 +241,8 @@
 
       </div>
       <!--End social media links-->
-
-    </section>
-  </div>
+    </div>
+  </section>
 </body>
 
 </html>
