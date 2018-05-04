@@ -107,11 +107,11 @@ img {
 }
 
 /*Styling section & container */
-section:before, section:after, .container:before, .container:after, .row:before, .row:after {
+section:before, section:after, header::before, header::after, .container:before, .container:after, .row:before, .row:after {
   display: table;
   content:" ";
 }
-section:after, .container:after, .row:after {
+section:after, header::after, .container:after, .row:after {
   clear:both;
 }
 
@@ -157,4 +157,21 @@ section:after, .container:after, .row:after {
 
 .column-4 img{
   max-width: 100%;
+}
+
+.navigation {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navigation > li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.navigation {
+  list-style-type: none;
+  padding: 0;
+  float: right;
+  text-align: right;
 }
