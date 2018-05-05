@@ -6,14 +6,12 @@ Grey 		    #919191;
 Light Blue 	#124AA8;
 Dark Blue 	#001F52;
 Black 		  #000000;
-
 Complementary colors:
 White       #FFFFFF;
 Light grey  #DBDBDA;
 Orange      #FDA404;
 Brown       #7D5100;
 Black       #000000;
-
 Font families
 'Open Sans', sans-serif
 'Roboto Slab', serif
@@ -27,8 +25,6 @@ body {
   /*font family and size */
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  /* Line height */
-  line-height: 1.6;
 }
 
 /*Styling of the headers*/
@@ -108,6 +104,8 @@ button:hover, button:focus {
 
 img {
   max-width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 /*Styling section & container */
@@ -128,7 +126,7 @@ section:after, header::after, .container:after, .row:after {
   border-bottom: 1px solid #CCC;
 }
 
-#about .about {
+.about {
   text-align: center;
 }
 
@@ -136,9 +134,13 @@ section:after, header::after, .container:after, .row:after {
   text-align: center;
 }
 
+/*Styling social icons (svg) */
+
 svg {
   width: 10%;
+  padding: 5px;
 }
+
 /* Layout styling */
 
 .wrapper {
@@ -218,10 +220,10 @@ svg {
   text-align: center;
 }
 
-
 .container {
   position: relative;
-  float: middle
+  float: middle;
+  display: inline;
 }
 
 .container-block {
@@ -232,41 +234,34 @@ svg {
   display: inline-block;
 }
 
-.container {
-  position: relative;
-}
-
-
 /*// Small devices (landscape phones, less than 768px) */
 
 @media (max-width: 767px) {
   h1 {
-    /* Reduce font-size of heading */
+    /* Reduce font-size of heading 1 */
     font-size: 24px;
     text-align: center;
   }
-  .column-2 {
-    /* Modify 2-column to 1-columns */
-    width: 99%;
-    margin-right: 1%;
+  button {
+    /* Resize button */
+    font-size: 18px;
   }
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
 
 @media all and (max-width: 575px) {
-  h1 {
-    /* Reduce font-size of heading */
-    font-size: 24px;
-    text-align: center;
+  h2 {
+    /*Reduce font-size of heading 2 */
+    font-size: 20px;
   }
-
+  button {
+    /* Resize button */
+    font-size: 18px;
+  }
   .column-2 {
     /* Modify 2-column to 1-columns */
     width: 99%;
     margin-right: 1%;
-  }
-  .column-2:nth-child(1) {
-    margin-right: 0;
   }
 }
