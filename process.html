@@ -9,6 +9,9 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:400,700" rel="stylesheet">
 
+  <!--Setting viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!--Favicons-->
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -21,32 +24,41 @@
 
 <body>
   <header>
-    <!-- Logo of the site -->
-    <img src="img/logo.png" alt="logo">
+    <div class="wrapper row">
 
-    <!-- Close the page -->
-    <nav>
-        <a class="menu" href="index.html#work">close</a>
-    </nav>
+      <!-- Logo of the site -->
+      <div class="column column-2">
+        <img src="img/logo.png" alt="logo">
+      </div>
+
+      <!-- Main Menu -->
+      <nav>
+        <ul class="navigation column column-2">
+          <li><a href="index.html#work">Close</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h1>My process</h1>
-    <h2>Inspiration</h2>
-    <div>I start by researching the problem, the product and the landscape it’s in. What is the problem? What are the business requirements? And what does the competition do? Then, I interview the users. What do they want? What do they need? And why do they
-      need that? Are there any frustrations? By knowing what the problem is and what the users want, I have a solid base to start working out a concept.
-    </div>
-
-    <h2>Concept</h2>
-    <div>With the user in mind and my research on hand, I start thinking about possible solutions. Making user flows, card sorting and simple sketches help me create a concept on how to solve the problem. Sometimes there are more solutions to one problem.
-      Talking to the users gives me feedback on what solution to work out further.
-    </div>
-
-    <h2>Design</h2>
+  <section class="wrapper">
     <div>
-      The best solutions I work out into wireframes and are improved by getting feedback from users and colleagues. In this iterative process, my wireframes change from low to high fidelity, getting more closer to the end result. Creating prototypes and discussing
-      them with the user is a great way to test my creation – is this what the user wants? Or should there be more improvements? The final results are presented to colleagues, developers, managers and stakeholders. This way, they understand the design
-      decisions I made, making it easier for them to understand what to develop. I’m open to criticism and feedback, as this will help me improve my designs even more.
+      <h1>My process</h1>
+      <h2>Inspiration</h2>
+      <div>I start by researching the problem, the product and the landscape it’s in. What is the problem? What are the business requirements? And what does the competition do? Then, I interview the users. What do they want? What do they need? And why do
+        they need that? Are there any frustrations? By knowing what the problem is and what the users want, I have a solid base to start working out a concept.
+      </div>
+
+      <h2>Concept</h2>
+      <div>With the user in mind and my research on hand, I start thinking about possible solutions. Making user flows, card sorting and simple sketches help me create a concept on how to solve the problem. Sometimes there are more solutions to one problem.
+        Talking to the users gives me feedback on what solution to work out further.
+      </div>
+
+      <h2>Design</h2>
+      <div>
+        The best solutions I work out into wireframes and are improved by getting feedback from users and colleagues. In this iterative process, my wireframes change from low to high fidelity, getting more closer to the end result. Creating prototypes and discussing
+        them with the user is a great way to test my creation – is this what the user wants? Or should there be more improvements? The final results are presented to colleagues, developers, managers and stakeholders. This way, they understand the design
+        decisions I made, making it easier for them to understand what to develop. I’m open to criticism and feedback, as this will help me improve my designs even more.
+      </div>
     </div>
   </section>
 </body>
