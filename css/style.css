@@ -27,6 +27,7 @@ body {
   /*font family and size */
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  margin: 0;
 }
 
 /*Styling of the headers*/
@@ -54,8 +55,13 @@ a {
   color: #FDA404;
 }
 
-a:hover, a:focus {
-  /*No underline when hovering over link or selecting it with keyboard*/
+a:hover {
+  /*No underline when hovering over link*/
+  text-decoration: none;
+}
+
+a:focus {
+  /*No underline when selecting it with keyboard*/
   text-decoration: none;
 }
 
@@ -70,13 +76,17 @@ nav a {
   color: #124AA8;
 }
 
-nav a:hover, nav a:active {
+nav a:hover {
+  color: #001F52;
+}
+
+nav a:active {
   color: #001F52;
 }
 
 /*Styling button */
 
-button {
+button, .button {
   /* overwrite browser defaults */
   /* reset the border */
   border: none;
@@ -86,6 +96,7 @@ button {
   font-size: 20px;
   /* style button */
   background-color: #FDA404;
+  color: #000000;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -94,7 +105,7 @@ button {
   transition: 0.2s opacity;
 }
 
-button:hover, button:focus {
+button:hover, .button:hover, button:focus, .button:focus {
   cursor: pointer;
   /* let's the mouse appear as hand when hovering over the button */
   opacity: 0.8;
@@ -108,6 +119,7 @@ img {
   max-width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 /*Styling section & container */
@@ -128,11 +140,11 @@ section:after, header::after, .container:after, .row:after {
   border-bottom: 1px solid #CCC;
 }
 
-.about {
+#about div {
   text-align: center;
 }
 
-.contact {
+#contact div {
   text-align: center;
 }
 
@@ -147,15 +159,12 @@ svg {
 
 .wrapper {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /*Column styling */
-
-.column-container {
-  font-size: 0;
-}
 
 .column {
   float: left;
@@ -167,30 +176,29 @@ svg {
   padding-right: 20px;
   display: inline-block;
 }
-
-.column-2 img {
-  max-width: 100%;
+.column-2 img{
+  margin: 0 auto;
 }
 
 /* 3 Columns layout */
+
 .column-3 {
-  font-size: 16px;
   width: 32%;
   display: inline-block;
-  margin-right: 1%;
+  margin-right: 2%;
   float: left;
-  text-align: center;
 }
 
 .column-3:last-child {
-  margin-right: 2;
+  margin-right: 0;
 }
 
-.column-3 img {
-  max-width: 100%;
+.column-3 img{
+  margin: 0 auto;
 }
 
 /* 4 Columns layout */
+
 .column-4 {
   font-size: 16px;
   width: 24%;
@@ -203,44 +211,42 @@ svg {
   margin-right: 0;
 }
 
-.column-4 img {
-  max-width: 100%;
+.column-4 img{
+  margin: 0 auto;
 }
 
-.navigation {
-  list-style-type: none;
-  padding: 0;
+header {
+  background: #DBDBDA;
+  padding: 10px 0 5px;
+  border-bottom: 5px solid #FDA404;
 }
 
-.navigation>li {
+.logo {
   display: inline-block;
-  margin-left: 10px;
+  width: 300px;
 }
 
-.navigation {
-  list-style-type: none;
-  padding: 0;
+nav {
+  display: inline-block;
   float: right;
-  text-align: right;
 }
 
-.container {
-  position: relative;
-  float: middle;
-  display: inline;
+nav ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.container-block {
-  display: block;
-}
-
-.container-inline-block {
-  display: inline-block;
+nav ul li {
+  float: left;
+  margin-left: 20px;
 }
 
 /*// Small devices (landscape phones, less than 768px) */
 
 @media (max-width: 767px) {
+  .wrapper {
+    padding: 0 10px;
+  }
   h1 {
     /* Reduce font-size of heading 1 */
     font-size: 24px;
@@ -249,6 +255,15 @@ svg {
   button {
     /* Resize button */
     font-size: 18px;
+  }
+  header {
+    text-align: center;
+  }
+  nav {
+    float: right;
+  }
+  nav ul li {
+    margin-right: 20px;
   }
 }
 
@@ -259,22 +274,23 @@ svg {
     /*Reduce font-size of heading 2 */
     font-size: 20px;
   }
-  button {
-    /* Resize button */
-    font-size: 18px;
+  nav {
+    float: none;
   }
   .column-2 {
     /* Modify 2-column to 1-column */
-    width: 99%;
-    margin-right: 1%;
+    width: 100%;
+    margin-right: 0%;
+    padding: 0;
   }
-
   .column-3 {
-    /* hide the 3 columns  */
-    display:none;
+    /* Modify 3 column to 1 column */
+    width: 100%;
+    margin-right: 0%;
+    padding: 0;
   }
 
-  .navigation {
-    text-align: center
+  .column-3 img{
+    width: 50%;
   }
 }
