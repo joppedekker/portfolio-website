@@ -13,6 +13,7 @@ Light grey  #DBDBDA;
 Orange      #FDA404;
 Brown       #7D5100;
 Black       #000000;
+Really light Grey #F8F8F8;
 
 Font families
 'Open Sans', sans-serif
@@ -26,7 +27,7 @@ Font families
 body {
   /*font family and size */
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0 auto;
 }
 
@@ -65,20 +66,6 @@ a:active {
   color: #7D5100;
 }
 
-/*Styling of the navigation menu*/
-
-nav a {
-  color: #124AA8;
-}
-
-nav a:hover {
-  color: #001F52;
-}
-
-nav a:active {
-  color: #001F52;
-}
-
 /*Styling button */
 
 button, .button {
@@ -89,25 +76,53 @@ button, .button {
   font-family: inherit;
   font-weight: bold;
   font-size: 20px;
+  /* style button */;
+  text-decoration: none;
+  padding: 10px;
+  /* width of the border, type, color */
+  transition-duration: 1s;
+  transition-property: opacity;
+}
+
+.buttonorange {
   /* style button */
   background-color: #FDA404;
   color: #000000;
-  text-decoration: none;
-  padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #7D5100;
+
   /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition-duration: 1s;
+  transition-property: opacity;
+}
+
+.buttonblue {
+  /* style button */
+  background-color: #124AA8;
+  color: #FFFFFF;
+  border-radius: 3px;
+  border-bottom: 2px solid #001F52;
+
+  /* width of the border, type, color */
+  transition-duration: 1s;
+  transition-property: opacity;
 }
 
 button:hover, .button:hover, button:focus, .button:focus {
+/* let's the mouse appear as hand when hovering over the button */
   cursor: pointer;
-  /* let's the mouse appear as hand when hovering over the button */
+/*Change opacity when hovering/selecting button*/
   opacity: 0.8;
-  /* Reduces the opactiy of the button to 80% */
+}
+
+button:active, .button:active {
+  /* selected link */
   color: #FFFFFF;
 }
 
+.buttonmargin{
+    margin: 50px 0 50px 0;
+}
 /*Standard styling images on max-width*/
 
 img {
@@ -127,26 +142,121 @@ section:after, header::after, .container:after, .row:after {
   clear: both;
 }
 
+/*Styling hero section*/
+
+.hero {
+  background: #124AA8;
+  border-bottom: 5px solid #919191;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 400;
+  padding-top: 50px;
+  padding-right: 0px;
+  padding-bottom: 50px;
+  padding-left: 0px;
+  display: block;
+}
+
+.hero h1 span {
+  font-weight: 300;
+  font-size: 36px;
+}
+
+/*Styling header Mywork*/
+
+.mywork {
+  background: #DBDBDA;
+  color: #124AA8;
+  padding-top: 20px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+}
+
+.mywork h1 {
+  font-weight: 400;
+}
+
+/*Styling text*/
+.blue {
+  color: #124AA8;
+}
+
+/*Styling background*/
+
+/*grey background*/
+.greyback {
+  background: #F8F8F8;
+}
+
+.endsection {
+  border-bottom: 1px solid #919191;
+}
 /*Styling #work */
 
 #work .row {
   padding: 10px 0;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #919191;
 }
+
+/*Styling about section*/
 
 #about div {
   text-align: center;
+  padding-bottom: 20px;
 }
 
-#contact div {
+/*Styling contact section*/
+
+#contact {
   text-align: center;
+  background: #DBDBDA;
+  border-top: 1px solid #919191;
+}
+
+#contact h1 {
+  color: #124AA8;
 }
 
 /*Styling social icons (svg) */
 
-svg {
-  width: 10%;
+svg  {
+  width: 5%;
   padding: 5px;
+
+}
+
+.himeji{
+  width: 100%;
+}
+/*Styling Project case pages*/
+
+/*Styling Case-title section*/
+
+.case-title {
+  background: #124AA8;
+  border-bottom: 5px solid #919191;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.case-title h1 {
+  font-size: 48px;
+  font-weight: 400;
+  padding-top: 50px;
+  padding-right: 0px;
+  padding-bottom: 50px;
+  padding-left: 0px;
+  display: block;
+}
+
+.case-title h1 span {
+  font-weight: 300;
+  font-size: 36px;
 }
 
 /* Layout styling */
@@ -184,10 +294,12 @@ svg {
   margin-right: 0;
 }
 
+/*Header with logo and navigation */
+
 header {
-  background: #DBDBDA;
+  background: #FFFFFF;
   padding: 10px 0 5px;
-  border-bottom: 5px solid #FDA404;
+  border-bottom: 5px solid #919191;
 }
 
 .logo {
@@ -210,9 +322,30 @@ nav ul li {
   margin-left: 20px;
 }
 
+/*Styling of the navigation menu*/
+
+nav a {
+  color: #124AA8;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #001F52;
+}
+
+nav a:active {
+  color: #001F52;
+}
+
+.grey {
+  /*for grey texts */
+  color: #919191;
+}
+
 /*// Small devices (landscape phones, less than 768px) */
 
 @media (max-width: 767px) {
+  /*General settings*/
   .wrapper {
     padding: 0 10px;
   }
@@ -221,9 +354,40 @@ nav ul li {
     font-size: 24px;
     text-align: center;
   }
+  /*Hero section*/
+  .hero h1 {
+    font-size: 36px;
+    font-weight: 400;
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+  }
+  .hero h1 span {
+    font-weight: 300;
+    font-size: 28px;
+  }
+  /*Layout case-title*/
+  .case-title h1 {
+    font-size: 36px;
+    font-weight: 400;
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+  }
+  .case-title h1 span {
+    font-weight: 300;
+    font-size: 28px;
+  }
+  /*Button*/
   button {
     /* Resize button */
     font-size: 18px;
+  }
+  /*Styling social icons (svg) */
+  svg {
+    width: 10%;
   }
 }
 
@@ -234,16 +398,13 @@ nav ul li {
     /*Reduce font-size of heading 2 */
     font-size: 20px;
   }
-
   /*changes in header*/
   header {
     text-align: center;
   }
-
   nav {
     float: none;
   }
-
   /*Changes in Columns*/
   .column-2 {
     /* Modify 2-column to 1-column */
@@ -260,4 +421,48 @@ nav ul li {
   .column-3 img {
     width: 50%;
   }
+}
+
+@keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+
+.cloud-to-right {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse2 {
+    from {transform: translate(438px,-10px);}
+    to {transform: translate(238px, -10px);}
+}
+
+.cloud-to-left2 {
+  animation: 34s cloud-move-reverse2 infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {transform: translate(550px,80px);}
+    to {transform: translate(300px,80px);}
+}
+
+.cloud-to-left {
+  animation: 60s cloud-move-reverse infinite alternate linear;
 }
