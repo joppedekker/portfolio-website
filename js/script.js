@@ -1,0 +1,1 @@
+console.log("Checking out the code, huh? ;-)\n\nWell, if you're looking for an UX Designer with knowledge of front-end development, you've found me! This website was designed and coded by me in HTML, CSS and javascript.\n\nEnjoy looking through the code and let me know what you think of it!\n\nBest regards, Joppe")
