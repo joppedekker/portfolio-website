@@ -31,6 +31,12 @@ body {
   margin: 0 auto;
 }
 
+/*For different textcolors*/
+.grey {
+  /*for grey texts */
+  color: #919191;
+}
+
 /*Styling of the headers*/
 
 h1 {
@@ -66,7 +72,7 @@ a:active {
   color: #7D5100;
 }
 
-/*Styling button */
+/*Styling buttons */
 
 button, .button {
   /* overwrite browser defaults */
@@ -76,12 +82,17 @@ button, .button {
   font-family: inherit;
   font-weight: bold;
   font-size: 20px;
-  /* style button */;
+  /* style button */
+  ;
   text-decoration: none;
   padding: 10px;
   /* width of the border, type, color */
   transition-duration: 1s;
   transition-property: opacity;
+}
+
+.buttonmargin {
+  margin: 50px 0 50px 0;
 }
 
 .buttonorange {
@@ -90,7 +101,6 @@ button, .button {
   color: #000000;
   border-radius: 3px;
   border-bottom: 2px solid #7D5100;
-
   /* width of the border, type, color */
   transition-duration: 1s;
   transition-property: opacity;
@@ -102,16 +112,15 @@ button, .button {
   color: #FFFFFF;
   border-radius: 3px;
   border-bottom: 2px solid #001F52;
-
   /* width of the border, type, color */
   transition-duration: 1s;
   transition-property: opacity;
 }
 
 button:hover, .button:hover, button:focus, .button:focus {
-/* let's the mouse appear as hand when hovering over the button */
+  /* let's the mouse appear as hand when hovering over the button */
   cursor: pointer;
-/*Change opacity when hovering/selecting button*/
+  /*Change opacity when hovering/selecting button*/
   opacity: 0.8;
 }
 
@@ -120,9 +129,6 @@ button:active, .button:active {
   color: #FFFFFF;
 }
 
-.buttonmargin{
-    margin: 50px 0 50px 0;
-}
 /*Standard styling images on max-width*/
 
 img {
@@ -140,6 +146,80 @@ section:before, section:after, header::before, header::after, .container:before,
 
 section:after, header::after, .container:after, .row:after {
   clear: both;
+}
+
+/*Styling Header with logo and navigation */
+
+header {
+  background: #FFFFFF;
+  padding: 10px 0 5px;
+  border-bottom: 5px solid #919191;
+}
+
+.logo {
+  display: inline-block;
+  width: 300px;
+}
+
+nav {
+  display: inline-block;
+  float: right;
+}
+
+/*Styling of the navigation menu*/
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  float: left;
+  margin: 20px 0 20px 20px;
+}
+
+nav ul li a {
+  color: #124AA8;
+  text-decoration: none;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+/*Top border go down and Left border appears*/
+
+.borders a:before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 2px;
+  height: 0px;
+  background: #FDA404;
+  content: "";
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.borders a:after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #FDA404;
+  content: "";
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.borders a:hover:before {
+  height: 100%;
+}
+
+.borders a:hover:after {
+  opacity: 0;
+  top: 100%;
 }
 
 /*Styling hero section*/
@@ -182,6 +262,7 @@ section:after, header::after, .container:after, .row:after {
 }
 
 /*Styling text*/
+
 .blue {
   color: #124AA8;
 }
@@ -189,6 +270,7 @@ section:after, header::after, .container:after, .row:after {
 /*Styling background*/
 
 /*grey background*/
+
 .greyback {
   background: #F8F8F8;
 }
@@ -196,6 +278,7 @@ section:after, header::after, .container:after, .row:after {
 .endsection {
   border-bottom: 1px solid #919191;
 }
+
 /*Styling #work */
 
 #work .row {
@@ -222,17 +305,17 @@ section:after, header::after, .container:after, .row:after {
   color: #124AA8;
 }
 
-/*Styling social icons (svg) */
+/*Styling social icons */
 
-svg  {
-  width: 5%;
-  padding: 5px;
-
+.social {
+  width: 50px;
+  padding: 10px;
 }
 
-.himeji{
+.himeji {
   width: 100%;
 }
+
 /*Styling Project case pages*/
 
 /*Styling Case-title section*/
@@ -294,55 +377,75 @@ svg  {
   margin-right: 0;
 }
 
-/*Header with logo and navigation */
 
-header {
-  background: #FFFFFF;
-  padding: 10px 0 5px;
-  border-bottom: 5px solid #919191;
+
+/*Start of the animations*/
+
+/*Animation of the Himeji castle svg*/
+
+@keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+  to {
+    fill: #f76414;
+  }
 }
 
-.logo {
-  display: inline-block;
-  width: 300px;
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
-nav {
-  display: inline-block;
-  float: right;
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
+.cloud-to-right {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
-nav ul li {
-  float: left;
-  margin-left: 20px;
+@keyframes cloud-move-reverse2 {
+  from {
+    transform: translate(438px, -10px);
+  }
+  to {
+    transform: translate(238px, -10px);
+  }
 }
 
-/*Styling of the navigation menu*/
-
-nav a {
-  color: #124AA8;
-  text-decoration: none;
+.cloud-to-left2 {
+  animation: 34s cloud-move-reverse2 infinite alternate linear;
 }
 
-nav a:hover {
-  color: #001F52;
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(550px, 80px);
+  }
+  to {
+    transform: translate(300px, 80px);
+  }
 }
 
-nav a:active {
-  color: #001F52;
+.cloud-to-left {
+  animation: 60s cloud-move-reverse infinite alternate linear;
 }
 
-.grey {
-  /*for grey texts */
-  color: #919191;
-}
+/*Start of the media queries (Keep this at the end of the stylesheet)*/
 
-/*// Small devices (landscape phones, less than 768px) */
+/* Small devices (landscape phones, less than 768px) */
 
 @media (max-width: 767px) {
   /*General settings*/
@@ -385,9 +488,9 @@ nav a:active {
     /* Resize button */
     font-size: 18px;
   }
-  /*Styling social icons (svg) */
-  svg {
-    width: 10%;
+  body {
+    /*change font-size */
+    font-size: 16px;
   }
 }
 
@@ -421,48 +524,4 @@ nav a:active {
   .column-3 img {
     width: 50%;
   }
-}
-
-@keyframes color-change {
-    from {fill: #edc655;}
-    to {fill: #f76414;}
-}
-
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move {
-    from {transform: translate(0,50px);}
-    to {transform: translate(200px,50px);}
-}
-
-.cloud-to-right {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move-reverse2 {
-    from {transform: translate(438px,-10px);}
-    to {transform: translate(238px, -10px);}
-}
-
-.cloud-to-left2 {
-  animation: 34s cloud-move-reverse2 infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-    from {transform: translate(550px,80px);}
-    to {transform: translate(300px,80px);}
-}
-
-.cloud-to-left {
-  animation: 60s cloud-move-reverse infinite alternate linear;
 }
