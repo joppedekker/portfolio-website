@@ -9,6 +9,9 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:300,400,700" rel="stylesheet">
 
+  <!--Lightbox css-->
+  <link href="css/lightbox.css" rel="stylesheet">
+
   <!--Setting viewport-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -59,7 +62,8 @@
     <section class="wrapper endsection">
       <h1 class="blue">Discovery</h1>
       <h2>Problem statement</h2>
-      <p>I started by researching the topic: What are scavenger hunts? What would users expect out of a scavenger hunt app?</p>
+      <p>I started by researching the topic: What are scavenger hunts? What would users expect out of a scavenger hunt app? I quickly realised that when I was playing a scavenger hunt, I wanted to discover the city I'm in and go to new places. But some scavengerhunt
+        games, like Pokémon Go, always seem to take you to the same places.</p>
       <p>Based on this, I came up with the following problem statement:</p>
       <p>Our scavenger hunt app users need a way to quickly set up a new, fun, and interesting scavenger hunt in their area with locations that really spark their interest because they wish to go off-the-beaten-path and (re)discover the area they’re in together
         with friends and family in a fun way.</p>
@@ -100,7 +104,11 @@
       </ul>
 
       <!--persona pictures-->
-      <img src="img/hiddengems/personas.png" alt="personas">
+      <a href="img/hiddengems/explorer.png" data-lightbox="persona" data-title="Persona of Claire, the explorer">
+        <img src="img/hiddengems/personas.png" alt="personas">
+      </a>
+      <a href="img/hiddengems/fanatic.png" data-lightbox="persona" data-title="Persona of Paul, the fanatic player"></a>
+      <a href="img/hiddengems/creator.png" data-lightbox="persona" data-title="Persona of James, the creator"></a>
     </section>
 
     <!--Revised problem statement & hypothesis-->
@@ -159,14 +167,19 @@
 
         <!--left column-->
         <div class="column column-2">
+          <a href="img/hiddengems/lowfi.png" data-lightbox="wireframe" data-title="Low-fidelity prototype made with pen and paper">
           <img src="img/hiddengems/lowfi.png" alt="lowfi-wireframes">
+        </a>
         </div>
 
         <!--Right column-->
         <div class="column column-2">
+          <a href="img/hiddengems/hifi.png" data-lightbox="wireframe" data-title="High-fidelity wireframes created in Sketch.">
           <img src="img/hiddengems/hifi.png" alt="hifi-wireframes">
+        </a>
         </div>
       </div>
+    </section>
 
     </section>
 
@@ -201,6 +214,7 @@
   </div>
   <!--Bottom of HTML file, start of JS-->
   <script src="js/jquery-git.min.js"></script>
+  <script src="js/lightbox.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 
