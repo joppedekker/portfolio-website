@@ -32,6 +32,7 @@ body {
 }
 
 /*For different textcolors*/
+
 .grey {
   /*for grey texts */
   color: #919191;
@@ -167,6 +168,7 @@ nav {
 }
 
 /*Styling of the navigation menu*/
+
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -377,7 +379,25 @@ nav ul li a {
   margin-right: 0;
 }
 
+.project {
+  position: relative;
+}
 
+.project-details {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  /* Reset this to 0 */
+  background: rgba(18, 74, 168, 0.5);
+  font-family: 'Roboto Slab', serif;
+  font-size: 80px;
+  text-align: center;
+  color: #FFFFFF;
+}
 
 /*Start of the animations*/
 
@@ -443,63 +463,15 @@ nav ul li a {
   animation: 60s cloud-move-reverse infinite alternate linear;
 }
 
-/*Start of the media queries (Keep this at the end of the stylesheet)*/
+/*Start of the media queries(Keep this at the end of the stylesheet)*/
 
-/* Small devices (landscape phones, less than 768px) */
+/* Medium devices (tablets, less than 992px) */
 
-@media (max-width: 767px) {
-  /*General settings*/
-  .wrapper {
-    padding: 0 10px;
-  }
+@media (max-width: 991px) {
   h1 {
     /* Reduce font-size of heading 1 */
     font-size: 24px;
     text-align: center;
-  }
-  /*Hero section*/
-  .hero h1 {
-    font-size: 36px;
-    font-weight: 400;
-    padding-top: 50px;
-    padding-right: 0px;
-    padding-bottom: 50px;
-    padding-left: 0px;
-  }
-  .hero h1 span {
-    font-weight: 300;
-    font-size: 28px;
-  }
-  /*Layout case-title*/
-  .case-title h1 {
-    font-size: 36px;
-    font-weight: 400;
-    padding-top: 50px;
-    padding-right: 0px;
-    padding-bottom: 50px;
-    padding-left: 0px;
-  }
-  .case-title h1 span {
-    font-weight: 300;
-    font-size: 28px;
-  }
-  /*Button*/
-  button {
-    /* Resize button */
-    font-size: 18px;
-  }
-  body {
-    /*change font-size */
-    font-size: 16px;
-  }
-}
-
-/* Extra small devices (portrait phones, less than 576px)*/
-
-@media all and (max-width: 575px) {
-  h2 {
-    /*Reduce font-size of heading 2 */
-    font-size: 20px;
   }
   /*changes in header*/
   header {
@@ -508,20 +480,75 @@ nav ul li a {
   nav {
     float: none;
   }
-  /*Changes in Columns*/
-  .column-2 {
-    /* Modify 2-column to 1-column */
-    width: 100%;
-    margin-right: 0%;
-    padding: 0;
+  /* Small devices (landscape phones, less than 768px) */
+  @media (max-width: 767px) {
+    /*General settings*/
+    .wrapper {
+      padding: 0 10px;
+    }
+    /*Hero section*/
+    .hero h1 {
+      font-size: 36px;
+      font-weight: 400;
+      padding-top: 50px;
+      padding-right: 0px;
+      padding-bottom: 50px;
+      padding-left: 0px;
+    }
+    .hero h1 span {
+      font-weight: 300;
+      font-size: 28px;
+    }
+    /*Layout case-title*/
+    .case-title h1 {
+      font-size: 36px;
+      font-weight: 400;
+      padding-top: 50px;
+      padding-right: 0px;
+      padding-bottom: 50px;
+      padding-left: 0px;
+    }
+    .case-title h1 span {
+      font-weight: 300;
+      font-size: 28px;
+    }
+    /*Button*/
+    button {
+      /* Resize button */
+      font-size: 18px;
+    }
+    body {
+      /*change font-size */
+      font-size: 16px;
+    }
   }
-  .column-3 {
-    /* Modify 3 column to 1 column */
-    width: 100%;
-    margin-right: 0%;
-    padding: 0;
+  /* Extra small devices (portrait phones, less than 576px)*/
+  @media all and (max-width: 575px) {
+    h2 {
+      /*Reduce font-size of heading 2 */
+      font-size: 20px;
+    }
+    /*changes in header*/
+    header {
+      text-align: center;
+    }
+    nav {
+      float: none;
+    }
+    /*Changes in Columns*/
+    .column-2 {
+      /* Modify 2-column to 1-column */
+      width: 100%;
+      margin-right: 0%;
+      padding: 0;
+    }
+    .column-3 {
+      /* Modify 3 column to 1 column */
+      width: 100%;
+      margin-right: 0%;
+      padding: 0;
+    }
+    .column-3 img {
+      width: 50%;
+    }
   }
-  .column-3 img {
-    width: 50%;
-  }
-}
