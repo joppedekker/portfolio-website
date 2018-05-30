@@ -16,7 +16,7 @@ $('a[href^="#"]').on('click', function (event) {
 
   if (target.length) {
     event.preventDefault()
-    $('html,body').stop().animate({
+    $('html ,body').stop().animate({
       scrollTop: target.offset().top
     }, 1000)
   }
