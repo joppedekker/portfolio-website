@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -7,7 +7,8 @@
 
   <!--Link to css stylesheet-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700" rel="stylesheet">
 
   <!--Setting viewport-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +24,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="top">
     <div class="wrapper">
       <!-- Logo of the site -->
       <a href="index.html">
@@ -32,15 +33,16 @@
       <!--Navigation menu-->
       <nav class="borders">
         <ul>
-          <li><a href="index.html#work">Close</a></li>
+          <li><a href="index.html#work">Back</a></li>
         </ul>
       </nav>
+    </div>
   </header>
 
   <!--Project case title and introduction-->
   <section class="case-title">
     <div class="wrapper">
-      <h1>Language learning app
+      <h1>Flashtastic - a language learning app
         <br><span>Empowering people to learn a new language</span></h1>
     </div>
   </section>
@@ -56,28 +58,30 @@
     </section>
 
     <!--Problem statement-->
-    <section>
-      <div class="wrapper endsection">
-        <h1 class="blue">Discovery</h1>
-        <p>I started the process by doing research. One way to learn vocabulary is by using flashcards. A flashcard is a card containing a small amount of information - an easy aid when learning a language.</p>
-        <p>Flashcards apps are very popular, but what I saw in my research is that most of these apps were targeted at students and kids. While flashcards are a great way to cram up new words, it also felt like the learning itself could be a bit boring.</p>
-      </div>
+    <section class="wrapper endsection">
+      <h1 class="blue">Discovery</h1>
+      <h2>Research</h2>
+      <p>I started the process by doing research. One way to learn vocabulary is by using flashcards. A flashcard is a card containing a small amount of information - an easy aid when learning a language.</p>
+      <p>Flashcard apps are very popular and there are a lot of different apps available in the App Store. But while flashcards are great to cram up new words, I also felt that this way of learning could be a bit boring. I looked at 3 different flashcard
+        apps. What I saw is that most of these apps were targeted at kids and students. Most of the apps I looked at, tried to make the learning more fun by using quizzes and games.</p>
     </section>
 
     <!--User research-->
     <section class="wrapper endsection">
       <h2>Persona</h2>
-      <p>In the user interviews, I learned that all my users had a personal reason to learn a language. Some of them where expats now living in the Netherlands, others had roots in foreign countries and because of that they had a great interest in learning
+      <p>In the user interviews, I learned that all my users had a personal reason to learn a language. Some of them where expats now living in the Netherlands, others had roots in foreign countries and because of that they had a great interest in learning
         the language. All of them found it hard the learn a language. Based on the user interviews I created a persona.</p>
 
-      <!--persona pictures-->
+      <!--persona picture-->
+      <img src="img/flashcards/charlotte.png" alt="persona">
     </section>
 
     <!--Revised problem statement & hypothesis-->
     <section class="wrapper endsection">
       <h2>Problem statement</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="problem">"Our scavenger hunt app users need a way to quickly set up a new, fun, and interesting scavenger hunt in their area with locations that really spark their interest because they wish to go off-the-beaten-path and (re)discover the area they’re in
+        together with friends and family in a fun way."</p>
+      <p class="problem">"We will know this to be true when we see how many scavenger hunt app users are using our app to explore the area they’re in."</p>
     </section>
 
     <!--User flows-->
@@ -92,23 +96,30 @@
         <li>A quiz to test yourself and to see that you are improving.</li>
       </ul>
       <!--Pictures of the flows-->
+      <img src="img/flashcards/flowchart.png" alt="flowchart">
     </section>
 
     <section class="wrapper endsection">
-      <h2>Wireframing and paper prototyping</h2>
-      <p>Based on the user flows, I started making wireframes. First, I created some quick sketches of the wireframes. Then I selected the best ideas, which I improved even further. When I was satisfied with the result, I made the wireframes into a prototype
-        using Prott. I prepared an usability test plan, so I could test the most important features of the app with the users. Key learnings usability tests:- The users where happy with the lesson structure.- The navigation of flashcards feature was
-        confusing for the user, not knowing how it works or how to go to the next card. Based on these findings, I improved my wireframes and prototype further.</p>
+      <div class="row">
+        <div class="column-l">
+          <h2>Wireframing</h2>
+          <p>Based on the user flows, I started making wireframes. First, I created some quick sketches using the 6-8-5 Exploratory Sketching technique. I sketched out six to eight ideas in five minutes and hanged them sketches on the wall.</p>
+          <p>After 5 rounds, I had about 30 different simple wireframes. I thought about the navigation in the app and decided on a flat navigation, using a bottom bar. I worked out my best ideas even further, keeping in mind the user flows I had created
+            before - with this I started forming a paper-prototype.</p>
+        </div>
 
-      <!--Pictures-->
-
+        <div class="column-s">
+          <!--Pictures of the 6-5-8 exploratory sketching-->
+          <img src="img/flashcards/prototyping.png" alt="flowchart">
+        </div>
+      </div>
     </section>
 
     <section class="wrapper endsection">
-      <!--User testing and results-->
       <h1 class="blue">Prototyping and User testing</h1>
-      <p>Based on the user flows, I started making wireframes. First, I created some quick sketches of the wireframes. Then I selected the best ideas, which I improved even further.</p>
-      <p>When I was satisfied with the result, I made the wireframes into a prototype using Prott. I prepared an usability test plan, so I could test the most important features of the app with the users.</p>
+      <p>To make the paper-prototype more interactive, I used the tool Prott, a great app for paper prototyping. Simply snap some shots of the wireframes you've made, then select that one of the buttons on your prototype and connect it with the next screen.
+        Within 30 minutes, I had a working prototype on my phone that I could test with potential users.</p>
+      <p>I prepared an usability test plan and recruited users to test with. Goal of the usability test was to find out if they could understand the structure of the app and to find out what they think about the lessons.</p>
       <h2>Key learnings usability tests:</h2>
       <ul>
         <li>The users where happy with the lesson structure</li>
@@ -120,18 +131,67 @@
     <section class="wrapper endsection">
       <!--Conclusion-->
       <h1 class="blue">Conclusion</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <p>While flashcards are a great way to learn a new language, creating an mobile app for this is difficult. While you of course can make use of flashcards in a languange learning app, I wonder if is the right way to learn a new language. People are
+        more comfortable with fun quizzes and excercises than with cramming up words with a flashcards.</p>
+      <p>For this case, I only did paper-prototyping - if I were to really make this app, I would first research further if flashcards are the right way to learn an language and how the users want to learn a language. More focus on the real needs instead
+        of the requirement of using flashcards.</p>
 
     </section>
     <!--End of project-->
   </div>
 
+  <!--Contact Information-->
+  <section id="contact">
+    <div class="wrapper">
+
+      <a class="blue" href="#top">Back to top</a>
+      <!--Start social media links-->
+      <div>
+        <!--Twitter-->
+        <a href="http://www.twitter.com/jopped">
+            <svg class="social" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+        <style type="text/css">
+          .st0{fill:#1DA1F2;}
+          .st1{fill:#FFFFFF;}
+        </style>
+        <g id="Dark_Blue">
+          <path class="st0" d="M350,400H50c-27.6,0-50-22.4-50-50V50C0,22.4,22.4,0,50,0h300c27.6,0,50,22.4,50,50v300
+            C400,377.6,377.6,400,350,400z"/>
+        </g>
+        <g id="Logo__x2014__FIXED">
+          <path class="st1" d="M153.6,301.6c94.3,0,145.9-78.2,145.9-145.9c0-2.2,0-4.4-0.1-6.6c10-7.2,18.7-16.3,25.6-26.6
+            c-9.2,4.1-19.1,6.8-29.5,8.1c10.6-6.3,18.7-16.4,22.6-28.4c-9.9,5.9-20.9,10.1-32.6,12.4c-9.4-10-22.7-16.2-37.4-16.2
+            c-28.3,0-51.3,23-51.3,51.3c0,4,0.5,7.9,1.3,11.7c-42.6-2.1-80.4-22.6-105.7-53.6c-4.4,7.6-6.9,16.4-6.9,25.8
+            c0,17.8,9.1,33.5,22.8,42.7c-8.4-0.3-16.3-2.6-23.2-6.4c0,0.2,0,0.4,0,0.7c0,24.8,17.7,45.6,41.1,50.3c-4.3,1.2-8.8,1.8-13.5,1.8
+            c-3.3,0-6.5-0.3-9.6-0.9c6.5,20.4,25.5,35.2,47.9,35.6c-17.6,13.8-39.7,22-63.7,22c-4.1,0-8.2-0.2-12.2-0.7
+            C97.7,293.1,124.7,301.6,153.6,301.6"/>
+        </g>
+        </svg>
+          </a>
+
+        <!--LinkedIn-->
+        <a href="https://www.linkedin.com/in/joppedekker/">
+            <svg class="social" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 382 382" style="enable-background:new 0 0 382 382;" xml:space="preserve">
+        <path
+          style="fill:#0077B7;"
+          d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889
+        C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056
+        H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1
+        s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73
+        c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079
+        c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426
+        c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472
+        L341.91,330.654L341.91,330.654z"/>
+        </svg>
+          </a>
+      </div>
+    </div>
+  </section>
+
   <!--Bottom of HTML file, start of JS-->
   <script src="js/jquery-git.min.js"></script>
+  <script src="js/lightbox.js"></script>
   <script src="js/scripts.js"></script>
-
 </body>
 
 </html>
