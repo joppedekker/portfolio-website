@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -7,7 +8,8 @@
 
   <!--Link to css stylesheet-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700" rel="stylesheet">
 
   <!--Lightbox css-->
   <link href="css/lightbox.css" rel="stylesheet">
@@ -26,7 +28,8 @@
 </head>
 
 <body>
-  <header>
+  
+  <header id="top">
     <div class="wrapper">
       <!-- Logo of the site -->
       <a href="index.html">
@@ -35,9 +38,10 @@
       <!--Navigation menu-->
       <nav class="borders">
         <ul>
-          <li><a href="index.html#work">Close</a></li>
+          <li><a href="index.html#work">Back</a></li>
         </ul>
       </nav>
+    </div>
   </header>
 
   <!--Project case title and introduction-->
@@ -45,7 +49,6 @@
     <div class="wrapper">
       <h1>Hidden Gems
         <br><span>Discover your city by playing scavenger hunts</span></h1>
-    </div>
     </div>
   </section>
 
@@ -65,21 +68,16 @@
       <p>I started by researching the topic: What are scavenger hunts? What would users expect out of a scavenger hunt app? I quickly realised that when I was playing a scavenger hunt, I wanted to discover the city I'm in and go to new places. But some scavengerhunt
         games, like Pokémon Go, always seem to take you to the same places.</p>
       <p>Based on this, I came up with the following problem statement:</p>
-      <p>Our scavenger hunt app users need a way to quickly set up a new, fun, and interesting scavenger hunt in their area with locations that really spark their interest because they wish to go off-the-beaten-path and (re)discover the area they’re in together
+      <p class="problem">Our scavenger hunt app users need a way to quickly set up a new, fun, and interesting scavenger hunt in their area with locations that really spark their interest because they wish to go off-the-beaten-path and (re)discover the area they’re in together
         with friends and family in a fun way.</p>
-      <p>We will know this to be true when we see how many scavenger hunt app users are using our app to explore the area they’re in.</p>
+      <p class="problem">We will know this to be true when we see how many scavenger hunt app users are using our app to explore the area they’re in.</p>
     </section>
 
     <!--Competitive analysis-->
     <section class="wrapper endsection">
-      <h2>Competitive analysis</h2>
-      <p>To get more insight on what a scavenger hunt app could be, a competitive analysis was done on two scavenger hunt apps. By finding out their key objectives, strategies, strength and weaknesses, I was able to understand the market I was designing
-        for better. </p>
-    </section>
-
-    <!--User research-->
-    <section class="wrapper endsection">
-      <h2>User research</h2>
+      <h2>Competitive analysis & User research</h2>
+      <p>To get more insight on what a scavenger hunt app could be, a competitive analysis was done on two scavenger hunt apps, Klikaklu and Geo-caching. By finding out their key objectives, strategies, strength and weaknesses, I was able to understand the
+        market I was designing for better. </p>
       <p>User interviews were conducted with four different persons. The goal was getting to know what kind of places they have interest in and what their experiences are with playing and creating scavenger hunts. All the information I got during the user
         interviews was mapped and sorted using affinity mapping.</p>
 
@@ -114,8 +112,8 @@
     <!--Revised problem statement & hypothesis-->
     <section class="wrapper endsection">
       <h2>Revised problem statement</h2>
-      <p><i>Our scavenger hunt app users need a way to go off-the-beaten-path and (re)discover the city they are in together with friends and family because they want to be immersed in their own city.</i></p>
-      <p><i>We will know this to be true when we see how many scavenger hunt app users are using our app to explore the area they're in.</i></p>
+      <p class="problem">Our scavenger hunt app users need a way to go off-the-beaten-path and (re)discover the city they are in together with friends and family because they want to be immersed in their own city.</p>
+      <p class="problem">We will know this to be true when we see how many scavenger hunt app users are using our app to explore the area they're in.</p>
 
       <!-- Hypotheses-->
       <div class="row">
@@ -123,19 +121,19 @@
         <!--first row - pictures of the three personas-->
         <!--left column-->
         <div class="column-3">
-          <img src="img/hiddengems/claire.png" alt="picture left">
+          <img class="centerimg" src="img/hiddengems/claire.png" alt="picture left">
           <p>We believe that by creating an “easy exploration mode” for Claire, we will achieve that Claire increases her knowledge on interesting places in the city with 30%</p>
         </div>
 
         <!--Middle column-->
         <div class="column-3">
-          <img src="img/hiddengems/paul.png" alt="picture middle">
+          <img class="centerimg" src="img/hiddengems/paul.png" alt="picture middle">
           <p>We believe that by creating a finish picture functionality that can be shared on social media for Paul, we will achieve that Paul’s motivation to keep playing scavenger hunts will increase with 20%</p>
         </div>
 
         <!--Right column-->
         <div class="column-3">
-          <img src="img/hiddengems/james.png" alt="picture right">
+          <img class="centerimg" src="img/hiddengems/james.png" alt="picture right">
           <p>We believe that by building a select location functionality for the creation of hunts for James, we will achieve that his capability to create interesting hunts will increase with 25%</p>
         </div>
       </div>
@@ -159,8 +157,8 @@
     <section class="wrapper endsection">
       <h2>Wireframes</h2>
       <p>Based on the user flows and with the created sitemap in mind, I started creating wireframes on paper. By making quick sketches, it is easy get to see what works and what doesn’t work. Ideas can be easily checked with users and stakeholders. This
-        really helped me to optimize the user flows even further. The wireframes were constantly refined after getting feedback from users and stakeholders. Mid-fidelity wireframes were made in Balsamiq and worked out further into high-fidelity wireframes
-        in Sketch. With the high-fidelity wireframes, I made a prototype in InVision.</p>
+        really helped me to optimize the user flows even further.</p>
+      <p>The wireframes were constantly refined after getting feedback from users and stakeholders. Mid-fidelity wireframes were made in Balsamiq and worked out further into high-fidelity wireframes in Sketch.</p>
 
       <!-- two pictures -->
       <div class="row">
@@ -181,11 +179,15 @@
       </div>
     </section>
 
-    </section>
-
     <section class="wrapper endsection">
       <!--User testing and results-->
       <h1 class="blue">Prototyping and User testing</h1>
+      <h2>Prototyping</h2>
+      <p>With the high-fidelity wireframes, I created a prototype in InVision. InVision is a really valuable tool, it's easy to use and you can make some complex real-looking prototypes with it. The inspect mode also really stood out to me, this can be a
+        really valuable tools during development!</p>
+    </section>
+
+    <section class="wrapper endsection">
       <h2>User testing</h2>
       <p>A moderated in-person usability test was performed with 5 participants. The goal of the test was to see how new users interact with the scavenger hunt app for the first time on mobile. To observe and measure if the users understand the app, it’s
         value and how to complete most important features: playing a hunt and creating a hunt</p>
@@ -197,21 +199,71 @@
         <li>Observe how the users experience a multiplayer hunt in Hidden Gems</li>
         <li>Observe how and determine how easy the users can create and organize a scavenger hunts in Hidden Gems</li>
       </ul>
-      <p>The tests led to some valuable insights on navigation in the app. Also, the multiplayer hunt made the participants really excited - even though there were some things that didn't work as they liked, they all thought it would be a fun and interesting
-        scavenger hunt game to play. With all the insights from the user tests and feedback from peers, I reiterated the designs, improving the navigation, the designs and it's accessibility even further.</p>
+      <p>The tests led to some valuable insights on navigation in the app. It was difficult for the users to find the menu for playing the scavenger hiunt. The multiplayer hunt made the participants really excited - even though there were some things that
+        didn't work as they liked, they all thought it would be a fun and interesting scavenger hunt game to play.</p>
+      <p>With all the insights from the user tests and feedback from peers, I reiterated the designs, improving the navigation, the designs and it's accessibility even further.</p>
     </section>
 
     <section class="wrapper endsection">
       <!--Conclusion-->
       <h1 class="blue">Conclusion</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-
+      <p>During the different iterations of the design this scavenger hunt app, I had a lot of contact with potential users. By interviewing them, thinking about the information architecture and user flows, you can quickly scope to an usable product. I really
+        like the prototyping and making the high-fidelity wireframes into a prototype. Invision is a fantastic tool to create a prototype and can be an valuable asset in a development process. Testing the prototype was a great way to gain new insights
+        and to see on what you are designing. It makes it easier to see mistakes in your flow before you're really starting with the development.</p>
+      <p>I didn't expect the multiplayer hunt to be such a hit, the users were really excited about this. They gave me loads of new ideas to work out for in future iterations and that really motivates me.</p>
     </section>
 
     <!--End of project-->
   </div>
+
+  <!--Contact Information-->
+  <section id="contact">
+    <div class="wrapper">
+      <a class="blue" href="#top">Back to top</a>
+      <!--Start social media links-->
+      <div>
+        <!--Twitter-->
+        <a href="http://www.twitter.com/jopped">
+          <svg class="social" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+      <style type="text/css">
+        .st0{fill:#1DA1F2;}
+        .st1{fill:#FFFFFF;}
+      </style>
+      <g id="Dark_Blue">
+        <path class="st0" d="M350,400H50c-27.6,0-50-22.4-50-50V50C0,22.4,22.4,0,50,0h300c27.6,0,50,22.4,50,50v300
+          C400,377.6,377.6,400,350,400z"/>
+      </g>
+      <g id="Logo__x2014__FIXED">
+        <path class="st1" d="M153.6,301.6c94.3,0,145.9-78.2,145.9-145.9c0-2.2,0-4.4-0.1-6.6c10-7.2,18.7-16.3,25.6-26.6
+          c-9.2,4.1-19.1,6.8-29.5,8.1c10.6-6.3,18.7-16.4,22.6-28.4c-9.9,5.9-20.9,10.1-32.6,12.4c-9.4-10-22.7-16.2-37.4-16.2
+          c-28.3,0-51.3,23-51.3,51.3c0,4,0.5,7.9,1.3,11.7c-42.6-2.1-80.4-22.6-105.7-53.6c-4.4,7.6-6.9,16.4-6.9,25.8
+          c0,17.8,9.1,33.5,22.8,42.7c-8.4-0.3-16.3-2.6-23.2-6.4c0,0.2,0,0.4,0,0.7c0,24.8,17.7,45.6,41.1,50.3c-4.3,1.2-8.8,1.8-13.5,1.8
+          c-3.3,0-6.5-0.3-9.6-0.9c6.5,20.4,25.5,35.2,47.9,35.6c-17.6,13.8-39.7,22-63.7,22c-4.1,0-8.2-0.2-12.2-0.7
+          C97.7,293.1,124.7,301.6,153.6,301.6"/>
+      </g>
+      </svg>
+        </a>
+
+        <!--LinkedIn-->
+        <a href="https://www.linkedin.com/in/joppedekker/">
+          <svg class="social" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 382 382" style="enable-background:new 0 0 382 382;" xml:space="preserve">
+      <path
+        style="fill:#0077B7;"
+        d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889
+      C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056
+      H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1
+      s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73
+      c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079
+      c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426
+      c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472
+      L341.91,330.654L341.91,330.654z"/>
+      </svg>
+        </a>
+      </div>
+    </div>
+    <div>© 2018 Joppe Dekker </div>
+  </section>
+
   <!--Bottom of HTML file, start of JS-->
   <script src="js/jquery-git.min.js"></script>
   <script src="js/lightbox.js"></script>
