@@ -1,19 +1,19 @@
 /*
 Colors used
 Primary colors:
-White 		  #FFFFFF;
+White 		  #fff;
 Grey 		    #919191;
-Light Blue 	#124AA8;
-Dark Blue 	#001F52;
-Black 		  #000000;
+Light Blue 	#124aa8;
+Dark Blue 	#001f52;
+Black 		  #000;
 
 Complementary colors:
-White       #FFFFFF;
-Light grey  #DBDBDA;
-Orange      #FDA404;
-Brown       #7D5100;
-Black       #000000;
-Really light Grey #F8F8F8;
+White       #fff;
+Light grey  #dbdbda;
+Orange      #fda404;
+Brown       #7d5100;
+Black       #000;
+Really light Grey #f8f8f8;
 
 Font families
 'Open Sans', sans-serif
@@ -25,20 +25,20 @@ Font families
 }
 
 body {
-  /*font family and size */
+  /* font family and size */
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   margin: 0 auto;
 }
 
-/*For different textcolors*/
+/* For different textcolors */
 
 .grey {
-  /*for grey texts */
+  /* for grey texts */
   color: #919191;
 }
 
-/*Styling of the headers*/
+/* Styling of the headers */
 
 h1 {
   font-family: 'Roboto Slab', serif;
@@ -56,52 +56,58 @@ h3 {
   font-size: 18px;
 }
 
-/*Start styling of the links*/
+/* Start styling of the links */
 
 a {
-  /*Base color of the link*/
-  color: #FDA404;
+  /* Base color of the link */
+  color: #fda404;
 }
 
-a:hover, a:focus {
-  /*No underline when hovering over link*/
+a:hover,
+a:focus {
+  /* No underline when hovering over link */
   text-decoration: none;
 }
 
 a:active {
   /* selected link */
-  color: #7D5100;
+  color: #7d5100;
 }
 
-/*Styling buttons */
+/* Styling buttons */
 
-button, .button {
+button,
+.button {
   /* overwrite browser defaults */
+
   /* reset the border */
   border: none;
+
   /* inherit the font from the outer container */
   font-family: inherit;
   font-weight: bold;
   font-size: 20px;
+
   /* style button */
-  ;
   text-decoration: none;
   padding: 10px;
+
   /* width of the border, type, color */
   transition-duration: 1s;
   transition-property: opacity;
 }
 
 .buttonmargin {
-  margin: 50px 0 50px 0;
+  margin: 50px 0;
 }
 
 .buttonorange {
   /* style button */
-  background-color: #FDA404;
-  color: #000000;
+  background-color: #fda404;
+  color: #000;
   border-radius: 3px;
-  border-bottom: 2px solid #7D5100;
+  border-bottom: 2px solid #7d5100;
+
   /* width of the border, type, color */
   transition-duration: 1s;
   transition-property: opacity;
@@ -109,50 +115,66 @@ button, .button {
 
 .buttonblue {
   /* style button */
-  background-color: #124AA8;
-  color: #FFFFFF;
+  background-color: #124aa8;
+  color: #fff;
   border-radius: 3px;
-  border-bottom: 2px solid #001F52;
+  border-bottom: 2px solid #001f52;
+
   /* width of the border, type, color */
   transition-duration: 1s;
   transition-property: opacity;
 }
 
-button:hover, .button:hover, button:focus, .button:focus {
+button:hover,
+.button:hover,
+button:focus,
+.button:focus {
   /* let's the mouse appear as hand when hovering over the button */
   cursor: pointer;
-  /*Change opacity when hovering/selecting button*/
+
+  /* Change opacity when hovering/selecting button */
   opacity: 0.8;
 }
 
-button:active, .button:active {
+button:active,
+.button:active {
   /* selected link */
-  color: #FFFFFF;
+  color: #fff;
 }
 
-/*Standard styling images on max-width*/
+/* Standard styling images on max-width */
 
 img {
   max-width: 100%;
-  margin: 20px 0 20px 0;
+  margin: 20px 0;
   display: flex;
 }
 
-/*Styling section & container */
+/* Styling section & container */
 
-section:before, section:after, header::before, header::after, .container:before, .container:after, .row:before, .row:after {
+section::before,
+section::after,
+header::before,
+header::after,
+.container::before,
+.container::after,
+.row::before,
+.row::after {
   display: table;
   content: " ";
 }
 
-section:after, header::after, .container:after, .row:after {
+section::after,
+header::after,
+.container::after,
+.row::after {
   clear: both;
 }
 
-/*Styling Header with logo and navigation */
+/* Styling Header with logo and navigation */
 
 header {
-  background: #FFFFFF;
+  background: #fff;
   padding: 10px 0 5px;
   border-bottom: 5px solid #919191;
 }
@@ -167,7 +189,7 @@ nav {
   float: right;
 }
 
-/*Styling of the navigation menu*/
+/* Styling of the navigation menu */
 
 nav ul {
   list-style-type: none;
@@ -180,134 +202,132 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #124AA8;
+  color: #124aa8;
   text-decoration: none;
-  margin: 0px 10px;
-  padding: 10px 10px;
+  margin: 0 10px;
+  padding: 10px;
   position: relative;
   z-index: 0;
   cursor: pointer;
 }
 
-/*Top border go down and Left border appears*/
+/* Top border go down and Left border appears */
 
-.borders a:before {
+.borders a::before {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 2px;
-  height: 0px;
-  background: #FDA404;
+  height: 0;
+  background: #fda404;
   content: "";
   opacity: 1;
   transition: all 0.3s;
 }
 
-.borders a:after {
+.borders a::after {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 2px;
-  background: #FDA404;
+  background: #fda404;
   content: "";
   opacity: 1;
   transition: all 0.3s;
 }
 
-.borders a:hover:before {
+.borders a:hover::before {
   height: 100%;
 }
 
-.borders a:hover:after {
+.borders a:hover::after {
   opacity: 0;
   top: 100%;
 }
 
-/*Styling hero section*/
+/* Styling hero section */
 
 .hero {
-  background: #124AA8;
+  background: #124aa8;
   border-bottom: 5px solid #919191;
-  color: #FFFFFF;
+  color: #fff;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 400;
-  padding-top: 50px;
-  padding-right: 0px;
-  padding-bottom: 50px;
-  padding-left: 0px;
+  padding-top: 40px;
+  margin-bottom: 0;
   display: block;
 }
 
-.hero h1 span {
+.hero p {
+  font-family: 'Roboto Slab', serif;
   font-weight: 300;
-  font-size: 36px;
+  font-size: 28px;
+  margin-top: 20px;
+  padding-bottom: 40px;
 }
 
-/*Styling header Mywork*/
+/* Styling header Mywork */
 
 .mywork {
-  background: #DBDBDA;
-  color: #124AA8;
-  padding-top: 20px;
-  padding-right: 0px;
-  padding-bottom: 20px;
-  padding-left: 0px;
+  background: #dbdbda;
+  color: #124aa8;
+  padding: 20px 0;
 }
 
 .mywork h1 {
   font-weight: 400;
 }
 
-/*Styling text*/
+/* Styling text */
 
 .blue {
-  color: #124AA8;
+  color: #124aa8;
 }
 
-/*Styling background*/
+/* Styling background */
 
-/*grey background*/
+/* grey background */
 
 .greyback {
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 
 .endsection {
   border-bottom: 1px solid #919191;
 }
 
-/*Styling #work */
+/* Styling #work */
 
 #work .row {
   padding: 10px 0;
   border-bottom: 1px solid #919191;
 }
 
-/*Styling about section*/
+/* Styling about section */
 
 #about div {
   text-align: center;
   padding-bottom: 20px;
 }
 
-/*Styling contact section*/
+/* Styling contact section */
 
 #contact {
   text-align: center;
-  background: #DBDBDA;
+  background: #dbdbda;
   border-top: 1px solid #919191;
 }
 
 #contact h1 {
-  color: #124AA8;
+  color: #124aa8;
 }
 
-/*Styling social icons */
+/* Styling social icons */
 
 .social {
   width: 50px;
@@ -318,24 +338,21 @@ nav ul li a {
   width: 100%;
 }
 
-/*Styling Project case pages*/
+/* Styling Project case pages */
 
-/*Styling Case-title section*/
+/* Styling Case-title section */
 
 .case-title {
-  background: #124AA8;
+  background: #124aa8;
   border-bottom: 5px solid #919191;
-  color: #FFFFFF;
+  color: #fff;
   text-align: center;
 }
 
 .case-title h1 {
   font-size: 48px;
   font-weight: 400;
-  padding-top: 50px;
-  padding-right: 0px;
-  padding-bottom: 50px;
-  padding-left: 0px;
+  padding: 50px 0;
   display: block;
 }
 
@@ -353,7 +370,7 @@ nav ul li a {
   padding: 0 20px;
 }
 
-/*Column styling */
+/* Column styling */
 
 .column {
   float: left;
@@ -379,6 +396,20 @@ nav ul li a {
   margin-right: 0;
 }
 
+.column-s {
+  width: 32%;
+  display: inline-block;
+  margin-right: 2%;
+  float: left;
+}
+
+.column-l {
+  width: 64%;
+  display: inline-block;
+  margin-right: 2%;
+  float: left;
+}
+
 .project {
   position: relative;
 }
@@ -391,22 +422,51 @@ nav ul li a {
   width: 100%;
   height: 100%;
   margin: 0;
+
   /* Reset this to 0 */
-  background: rgba(18, 74, 168, 0.5);
+  background: rgba(18, 74, 168, 0.35);
   font-family: 'Roboto Slab', serif;
   font-size: 80px;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
 }
 
-/*Start of the animations*/
+.project-details p {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
 
-/*Animation of the Himeji castle svg*/
+.problem {
+  text-align: center;
+  font-style: italic;
+}
+
+.center {
+  text-align: center;
+}
+
+.centerimg {
+  margin: 0 auto;
+}
+
+.joppe {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+}
+
+/* Start of the animations */
+
+/* Animation of the Himeji castle svg */
 
 @keyframes color-change {
   from {
     fill: #edc655;
   }
+
   to {
     fill: #f76414;
   }
@@ -424,6 +484,7 @@ nav ul li a {
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -441,6 +502,7 @@ nav ul li a {
   from {
     transform: translate(438px, -10px);
   }
+
   to {
     transform: translate(238px, -10px);
   }
@@ -454,6 +516,7 @@ nav ul li a {
   from {
     transform: translate(550px, 80px);
   }
+
   to {
     transform: translate(300px, 80px);
   }
@@ -463,7 +526,7 @@ nav ul li a {
   animation: 60s cloud-move-reverse infinite alternate linear;
 }
 
-/*Start of the media queries(Keep this at the end of the stylesheet)*/
+/* Start of the media queries(Keep this at the end of the stylesheet) */
 
 /* Medium devices (tablets, less than 992px) */
 
@@ -473,82 +536,102 @@ nav ul li a {
     font-size: 24px;
     text-align: center;
   }
-  /*changes in header*/
+
+  /* changes in header */
   header {
     text-align: center;
   }
+
   nav {
     float: none;
   }
+
   /* Small devices (landscape phones, less than 768px) */
   @media (max-width: 767px) {
-    /*General settings*/
+    /* General settings */
     .wrapper {
       padding: 0 10px;
     }
-    /*Hero section*/
+
+    /* Hero section */
     .hero h1 {
-      font-size: 36px;
-      font-weight: 400;
-      padding-top: 50px;
-      padding-right: 0px;
-      padding-bottom: 50px;
-      padding-left: 0px;
+      font-size: 32px;
     }
-    .hero h1 span {
+
+    .hero p {
       font-weight: 300;
-      font-size: 28px;
+      font-size: 24px;
     }
-    /*Layout case-title*/
+
+    /* Layout case-title */
     .case-title h1 {
       font-size: 36px;
       font-weight: 400;
-      padding-top: 50px;
-      padding-right: 0px;
-      padding-bottom: 50px;
-      padding-left: 0px;
+      padding: 50px 0;
     }
+
     .case-title h1 span {
       font-weight: 300;
       font-size: 28px;
     }
-    /*Button*/
+
+    /* Button */
     button {
       /* Resize button */
       font-size: 18px;
     }
+
     body {
-      /*change font-size */
+      /* change font-size */
       font-size: 16px;
     }
+
+    .column-s {
+      width: 100%;
+      margin-right: 0%;
+      float: left;
+    }
+
+    .column-l {
+      width: 100%;
+      margin-right: 0%;
+    }
   }
-  /* Extra small devices (portrait phones, less than 576px)*/
+
+  /* Extra small devices (portrait phones, less than 576px) */
   @media all and (max-width: 575px) {
     h2 {
-      /*Reduce font-size of heading 2 */
+      /* Reduce font-size of heading 2 */
       font-size: 20px;
     }
-    /*changes in header*/
+
+    /* changes in header */
     header {
       text-align: center;
     }
+
     nav {
+      font-size: 14px;
       float: none;
     }
-    /*Changes in Columns*/
+
+    /* Changes in Columns */
     .column-2 {
       /* Modify 2-column to 1-column */
       width: 100%;
       margin-right: 0%;
       padding: 0;
     }
+
     .column-3 {
       /* Modify 3 column to 1 column */
       width: 100%;
       margin-right: 0%;
       padding: 0;
     }
+
     .column-3 img {
       width: 50%;
     }
   }
+}
