@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -7,7 +8,8 @@
 
   <!--Link to css stylesheet-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700" rel="stylesheet">
 
   <!--Setting viewport-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +25,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="top">
     <div class="wrapper">
       <!-- Logo of the site -->
       <a href="index.html">
@@ -34,9 +36,8 @@
 
         <!--Navigation menu-->
         <ul>
-          <li><a href="#work">My work</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#about">About me</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -46,10 +47,8 @@
   <!-- Hero section (Keep as Div if only headline, otherwise make it a section)-->
   <section class="hero">
     <div class="wrapper">
-      <h1>Hi, My name is Joppe Dekker
-        <br>
-      <span>An UX designer with an extensive background in software design and a passion for achieving great user experience. </span>
-    </h1>
+      <h1>Hi, my name is Joppe Dekker</h1>
+      <p>a UX designer with an extensive background in software design and a passion for achieving great user experiences. </p>
     </div>
   </section>
 
@@ -60,6 +59,22 @@
     </div>
 
     <div class="wrapper">
+      <!-- My process -->
+      <div class="row">
+
+        <!-- Left column -->
+        <div class="column column-2">
+          <img src="img/process.png" alt="my work approach">
+        </div>
+
+        <!--Right column-->
+        <div class="column column-2">
+          <h2>My design approach</h2>
+          <p>With my background in system design and my knowledge of UX design, I have developed a broad variation of skills that I use when designing.</p>
+          <p>Here I'll tell you more about my approach, the tools and the skills I use.</p>
+          <a href="process.html">Read more</a>
+        </div>
+      </div>
 
       <!-- Scavenger hunt app -->
       <div class="row">
@@ -70,8 +85,8 @@
         </div>
 
         <div class="column column-2">
-          <h2>Hidden Gems</h2>
-          <p>Hidden Gems is a mobile scavenger hunt app I designed during the course UX Immersion of Careerfoundry.</p>
+          <h2>Hidden Gems - Scavenger hunt app</h2>
+          <p>Hidden Gems is a mobile scavenger hunt app I designed during the UX Immersion course of Careerfoundry.</p>
 
           <h3>Used skills</h3>
           <p class="grey">competitive analysis, research, personas, user journeys, mobile first, information architecture, user flows, wireframing, prototyping, usability and preference testing</p>
@@ -90,7 +105,7 @@
 
         <!--Right column-->
         <div class="column column-2">
-          <h2>Language Learning app</h2>
+          <h2>Flashtastic - Language learning app</h2>
           <p>During the UX Fundamentals course of Careerfoundry, I designed a lesson based vocabulary learning app. </p>
 
           <h3>Used skills</h3>
@@ -120,50 +135,29 @@
           <p>Coming soon!</p>
         </div>
       </div>
-    </div>
-    </div>
-    <!--End work examples -->
+      <!--End work examples -->
     </div>
   </section>
 
-  <!--Process section-->
-  <section id="process" class="wrapper endsection">
-    <h1 class="blue">My process</h1>
-    <h2>Discovery</h2>
-    <p>I start by researching the problem, the product and the landscape it’s in. What is the problem? What are the business requirements? And what does the competition do?</P>
-    <P>Then, I interview the users. What do they want? What do they need? And why do they need that? Are there any frustrations?</p>
-    <p>By knowing what the problem is and what the users want, I have a solid base to start working out a concept.</p>
 
-    <h2>Concepting</h2>
-    <p>With the user in mind and my research on hand, I start thinking about possible solutions. Making user flows, card sorting and simple sketches help me create a concept on how to solve the problem.</p>
-    <p>Sometimes there are more solutions to one problem. Talking to the users gives me feedback on what solution to work out further.</p>
-
-    <h2>Wireframing and Prototyping</h2>
-    <p>The best solutions I work out into wireframes and are improved by getting feedback from users and colleagues. In this iterative process, my wireframes change from low to high fidelity, getting more closer to the end result.</p>
-    <p>Creating prototypes and discussing them with the user is a great way to test my creation – is this what the user wants? Or should there be more improvements? </p>
-    <p>The final results are presented to colleagues, developers, managers and stakeholders. This way, they understand the design decisions I made, making it easier for them to understand what to develop. I’m open to criticism and feedback, as this will
-      help me improve my designs even more.</p>
-
-  </section>
   <!-- About me -->
   <section id="about">
     <div class="wrapper">
+      <img class="joppe" src="img/joppe.png" alt="That's me!">
       <h1 class="blue">About me</h1>
-      <p>I’m a UX Designer with a software development background.Over the past 16 years I’ve seen all different aspects of the development process: gathering user and business requirements, designing, developing, testing, implementing and managing complex
-        applications.
-      </p>
-      <p>I’m passionate about creating and designing user-centered products. I am currently looking for a new opportunity where I can combine my past experience with my passion for UX design.</p>
-      <p>I love to discover new movies, boardgames and computergames. I'm also a big fan of Japanese pop-culture! </p>
+      <p>I’m a UX Designer with an extensive background in system design and application management. When creating new applications, I was always in contact with business, users and the development team.</p>
+      <p>My latest interest is user experience design. I’m passionate about creating and designing user-centered products. I am currently looking for a new opportunity where I can combine my past experience with my passion for UX design.</p>
+      <p>In my free time, I love to discover new movies, boardgames and computergames. I'm also a big fan of Japanese pop-culture!</p>
 
       <!--Download CV-->
       <div class="buttonmargin">
         <a href="files/cv.pdf" class="button buttonorange" download>Download my CV</a>
       </div>
-
-      <!--SVG Himeji Castle-->
+    </div>
+  </section>
+  <!--SVG Himeji Castle
       <?xml version="1.0" encoding="UTF-8"?>
       <svg class="himeji" width="622px" height="510px" viewBox="0 0 622 510" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
           <title>Himeji castle@2x</title>
           <desc>Created with Sketch.</desc>
           <defs></defs>
@@ -263,12 +257,13 @@
               </g>
           </g>
       </svg>
-    </div>
-  </section>
+  </div>
+  </section>-->
 
   <!--Contact Information-->
   <section id="contact">
     <div class="wrapper">
+      <a class="blue" href="#top">Back to top</a>
 
       <h1>Contact</h1>
       <p>Want to know more about me and what I can do for your company?</p>
@@ -282,8 +277,6 @@
       <div>
         <!--Twitter-->
         <a href="http://www.twitter.com/jopped">
-          <?xml version="1.0" encoding="utf-8"?>
-          <!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
           <svg class="social" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
       <style type="text/css">
       	.st0{fill:#1DA1F2;}
@@ -306,8 +299,6 @@
 
         <!--LinkedIn-->
         <a href="https://www.linkedin.com/in/joppedekker/">
-          <?xml version="1.0" encoding="iso-8859-1"?>
-          <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
           <svg class="social" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 382 382" style="enable-background:new 0 0 382 382;" xml:space="preserve">
     	<path
     		style="fill:#0077B7;"
@@ -322,8 +313,9 @@
       </svg>
         </a>
       </div>
+    </div>
 
-      <!--End social media links-->
+    <!--End social media links-->
   </section>
 
   <!--Bottom of HTML file, start of JS-->
