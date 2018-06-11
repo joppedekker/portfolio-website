@@ -458,6 +458,13 @@ nav ul li a {
   padding: 20px 0 0;
 }
 
+.remark {
+  text-align: center;
+  font-style: italic;
+  font-size: 16px;
+  color: #919191;
+}
+
 /* Start of the animations */
 
 /* Animation of the Himeji castle svg */
