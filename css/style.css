@@ -622,6 +622,11 @@ nav ul li a {
       float: none;
     }
 
+    /* set navigation right for smaller screen sizes */
+    nav ul li {
+      margin: 10px 0 10px 10px;
+    }
+
     /* Changes in Columns */
     .column-2 {
       /* Modify 2-column to 1-column */
